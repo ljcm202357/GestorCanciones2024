@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form action="/login" method="POST">
+          
+            <label>Usuario:</label>
+            <input type="text" name="txtusuario" required>
+          
+          
+            <label>Contraseña:</label>
+            <input type="password"  name="txtcontrasena" required>
+         
+          <button type="submit">Iniciar Sesión</button>
+        </form>
+      </div>
+   <!--   {% if 'usuario' in session %}
+      <h1>Bienvenido, {{ session['usuario'] }}</h1>
+  {% endif %} !-- >
+</body>
+</html>

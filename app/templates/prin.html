@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+<div class="container">
+    <h1>Bienvenido, {{session['usuario']}} </h1>
+    <p>¡Has iniciado sesión correctamente!</p>
+    <a href="/logout">Cerrar sesión</a>
+    
+    
+</div>
+{% if 'usuario' in session %}
+<h1>Bienvenido, {{ session['usuario'] }}</h1>
+{% endif %}
+
+</body>
+</html>

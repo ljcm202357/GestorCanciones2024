@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+<div class="container">
+  <h1>Agregar Canciones</h1>
+  <form action="/agregarcanciones" method="post" enctype="multipart/form-data">
+      <label for="txttitulo">Título:</label><br>
+      <input type="text" id="txttitulo" name="txttitulo"><br>
+      
+      <label for="txtartista">Artista:</label><br>
+      <input type="text" id="txtartista" name="txtartista"><br>
+      
+      <label for="txtgenero">Género:</label><br>
+      <input type="text" id="txtgenero" name="txtgenero"><br>
+      
+      <label for="txtprecio">Precio:</label><br>
+      <input type="text" id="txtprecio" name="txtprecio"><br>
+      
+      <label for="txtduracion">Duración:</label><br>
+      <input type="text" id="txtduracion" name="txtduracion"><br>
+      
+      <label for="txtlanzamiento">Lanzamiento:</label><br>
+      <input type="date" id="txtlanzamiento" name="txtlanzamiento"><br>
+      
+      <label for="txtimagen">Imagen:</label><br>
+      <input type="file" id="txtimagen" name="txtimagen"><br><br>
+      
+      <input type="submit" value="Agregar Canción">
+  </form>
+    </div>
+  </body>
+  </html>
